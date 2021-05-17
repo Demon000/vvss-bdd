@@ -26,6 +26,7 @@ public class MCMusicStory {
         options.addArguments("--disable-infobars");
         options.addArguments("--start-maximized");
         options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--remote-debugging-port=9222");
         options.setExperimentalOption("useAutomationExtension", false);
         options.addArguments("--log-level=3"); // set log level
         options.addArguments("--silent");
