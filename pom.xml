@@ -14,6 +14,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <serenity.version>2.4.24</serenity.version>
         <webdriver.driver>chrome</webdriver.driver>
+        <webdriver.chrome.driver>/usr/bin/chromedriver</webdriver.chrome.driver>
     </properties>
 
     <repositories>
