@@ -12,7 +12,7 @@ import org.openqa.selenium.WebDriver;
 @RunWith(SerenityParameterizedRunner.class)
 @UseTestDataFrom("src/test/resources/user_data.csv")
 public class MCMusicStory {
-    @Managed(uniqueSession = true, driver = "chrome")
+    @Managed(uniqueSession = true)
     public WebDriver webDriver;
 
     @Steps
