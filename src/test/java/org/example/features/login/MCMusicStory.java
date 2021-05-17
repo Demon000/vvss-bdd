@@ -18,17 +18,8 @@ public class MCMusicStory {
 
     public MCMusicStory() {
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--no-sandbox"); //Bypass OS security model
-        options.addArguments("--disable-web-security");
-        options.addArguments("--ignore-urlfetcher-cert-requests");
-        options.addArguments("--disable-renderer-backgrounding");
-        options.addArguments("--disable-infobars");
-        options.addArguments("--start-maximized");
-        options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--no-sandbox");
         options.addArguments("--remote-debugging-port=9222");
-        options.setExperimentalOption("useAutomationExtension", false);
-        options.addArguments("--log-level=3"); // set log level
-        options.addArguments("--silent");
         options.addArguments("--headless");
         options.addArguments("window-size=1920,1080");
         webDriver = new ChromeDriver(options);
