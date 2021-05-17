@@ -14,7 +14,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 @RunWith(SerenityParameterizedRunner.class)
 @UseTestDataFrom("src/test/resources/user_data.csv")
 public class MCMusicStory {
-    @Managed(uniqueSession = true)
     public WebDriver webDriver;
 
     public MCMusicStory() {
@@ -30,7 +29,7 @@ public class MCMusicStory {
         options.setExperimentalOption("useAutomationExtension", false);
         options.addArguments("--log-level=3"); // set log level
         options.addArguments("--silent");
-        options.addArguments("--disable-gpu");
+        options.addArguments("--headless");
         options.addArguments("window-size=1920,1080");
         webDriver = new ChromeDriver(options);
     }
